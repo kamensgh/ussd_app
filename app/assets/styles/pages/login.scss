@@ -1,0 +1,31 @@
+.login.centered {
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
+
+
+#login {
+    background: #F7F7F8;
+    height: 100vh;
+}
+
+.login-form{
+    height: 300px;
+    position: absolute;
+    top: -76px;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(140,140,140,0.36);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(140,140,140,0.36);
+    box-shadow: 2px 3px 5px 0px rgba(140,140,140,0.36);
+
+    img{
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+}

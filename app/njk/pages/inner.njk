@@ -1,0 +1,81 @@
+<!-- inner.nunjucks -->
+{% set title='Home' %}
+{% extends "site_base.njk" %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<link href="{{ baseUrl }}/app/dist/styles/inner.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="title pr-3">
+    <h3 class="float-left">My First USSD App</h3>
+    <a href="simulator.html" class="btn float-right btn-primary">Save</a>
+</div>
+
+<div>
+    <div class="row no-gutters">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="pl-4"> 
+                    <p class="mb-1 font-weight-light">Daily Requests</p>
+                    <p class="text-muted small font-weight-light">16 - 23 September 2017</p>
+                </div>
+              
+                <div class="dash m-3">
+                    <div class="drag-div"></div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-2 pr-3">
+            <div class="card side">
+                <h6 class="font-weight-bold">Activities</h6>
+                <p class="small font-weight-light">
+                    <i class="fa mr-2 fa-mouse-pointer" aria-hidden="true"></i>
+                    Click and drag the activities over
+                </p>
+
+                <div class="activities mt-2">
+                    <div class="row">
+                        <div class="col mb-4">
+                            <div class="card d-flex align-items-center py-4">
+                                    <img src="{{ baseUrl }}/app/dist/images/folder.png" class="" />
+                                    <p class="mt-3 mb-0">Menu</p>
+                            </div>
+
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card d-flex align-items-center py-4">
+                                    <img src="{{ baseUrl }}/app/dist/images/msg.png" class="" />
+                                    <p class="mt-3 mb-0">Message</p>
+                            </div>
+
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card d-flex align-items-center py-4">
+                                    <img src="{{ baseUrl }}/app/dist/images/input.png" class="" />
+                                    <p class="mt-3 mb-0">Input</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+              
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+<nav class="navbar bg-white  navbar-expand-lg main px-0">
+  <div class="container">
+    <a class="navbar-brand" href="{{ baseUrl }}/html/login.html">*123#</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarTogglerDemo02">
+    <ul class="navbar-nav">
+      {% import '../links/_nav_links.njk' as nav %}
+      {{nav.active( activeNav, baseUrl )}}
+    </ul>
+  </div>
+  </div>
+  
+</nav>

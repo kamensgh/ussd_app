@@ -1,0 +1,243 @@
+<!-- inner.nunjucks -->
+{% from "templates/partials/_modal.njk" import modal %}
+{% set title='All Apps' %}
+{% extends "site_base.njk" %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<link href="{{ baseUrl }}/app/dist/styles/inner.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="title pr-3">
+    <h3 class="float-left">Apps</h3>
+    <a href="#" class="btn float-right btn-primary">Add New App</a>
+</div>
+
+<div class="all_apps">
+    <div class="row ">
+        <div class="col-md-3 mb-4 pl-0">
+            <div class="card ">
+                    <div class="position-absolute text-muted top-right">
+                        <i class="fa fa-ellipsis-v text-primary h-auto p-1 pointer" aria-hidden="true" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"></i>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+                            <a class="dropdown-item py-1" data-target="#UpdatehubtelCard" data-toggle="modal" href="#">Edit App</a>
+                            <a class="dropdown-item py-1" data-toggle="modal" data-target="#delApp"  href="#">Delete App</a>
+                        </div>
+                    </div>
+                <p>Test App</p>
+                <p class="mb-2">Description of the application get here. So we can have an idea what the app does</p>
+                <hr class="mb-4"/>
+                <div class="form-group">
+                    <label>Session stats</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Session stats</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                 <a href="inner.html" class="btn btn-outline-primary">Launch App</a>
+            </div>
+
+        </div>
+        <div class="col-md-3 mb-4 pl-0">
+                <div class="card">
+                        <div class="position-absolute text-muted top-right">
+                            <i class="fa fa-ellipsis-v text-primary h-auto p-1 pointer" aria-hidden="true" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></i>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+                                <a class="dropdown-item py-1" data-target="#UpdatehubtelCard" data-toggle="modal" href="#">Edit App</a>
+                                <a class="dropdown-item py-1" data-toggle="modal" data-target="#delApp"  href="#">Delete App</a>
+                            </div>
+                        </div>
+                    <p>Test App</p>
+                    <p class="mb-2">Description of the application get here. So we can have an idea what the app does</p>
+                    <hr class="mb-4"/>
+                    <div class="form-group">
+                        <label>Session stats</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Session stats</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+    
+                     <a href="inner.html" class="btn btn-outline-primary">Launch App</a>
+                </div>
+    
+        </div>
+        <div class="col-md-3 mb-4 pl-0">
+                <div class="card">
+                        <div class="position-absolute text-muted top-right">
+                                <i class="fa fa-ellipsis-v text-primary h-auto p-1 pointer" aria-hidden="true" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"></i>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+                                    <a class="dropdown-item py-1" data-target="#UpdatehubtelCard" data-toggle="modal" href="#">Edit App</a>
+                                    <a class="dropdown-item py-1" data-toggle="modal" data-target="#delApp"  href="#">Delete App</a>
+                                </div>
+                            </div>
+                    <p>Test App</p>
+                    <p class="mb-2">Description of the application get here. So we can have an idea what the app does</p>
+                    <hr class="mb-4"/>
+                    <div class="form-group">
+                        <label>Session stats</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Session stats</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+    
+                     <a href="inner.html" class="btn btn-outline-primary">Launch App</a>
+                </div>
+    
+        </div>
+        <div class="col-md-3 mb-4 pl-0">
+                <div class="card">
+                        <div class="position-absolute text-muted top-right">
+                                <i class="fa fa-ellipsis-v text-primary h-auto p-1 pointer" aria-hidden="true" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"></i>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+                                    <a class="dropdown-item py-1" data-target="#UpdatehubtelCard" data-toggle="modal" href="#">Edit App</a>
+                                    <a class="dropdown-item py-1" data-toggle="modal" data-target="#delApp"  href="#">Delete App</a>
+                                </div>
+                            </div>
+                    <p>Test App</p>
+                    <p class="mb-2">Description of the application get here. So we can have an idea what the app does</p>
+                    <hr class="mb-4"/>
+                    <div class="form-group">
+                        <label>Session stats</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Session stats</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+    
+                     <a href="inner.html" class="btn btn-outline-primary">Launch App</a>
+                </div>
+    
+        </div>
+        <div class="col-md-3 mb-4 pl-0">
+                <div class="card d-none">
+                        <div class="position-absolute text-muted top-right">
+                                <i class="fa fa-ellipsis-v text-primary h-auto p-1 pointer" aria-hidden="true" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"></i>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+                                    <a class="dropdown-item py-1" data-target="#UpdatehubtelCard" data-toggle="modal" href="#">Edit App</a>
+                                    <a class="dropdown-item py-1" data-toggle="modal" data-target="#delApp"  href="#">Delete App</a>
+                                </div>
+                            </div>
+                    <p>Test App</p>
+                    <p class="mb-2">Description of the application get here. So we can have an idea what the app does</p>
+                    <hr class="mb-4"/>
+                    <div class="form-group">
+                        <label>Session stats</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Session stats</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+    
+                     <a href="inner.html" class="btn btn-outline-primary">Launch App</a>
+                </div>
+                <div class="fb-loader">
+                    <div class="timeline-wrapper">
+                        <div class="timeline-item">
+                            <div class="animated-background mb-3">
+                                <div class="background-masker header-top"></div>
+                                <div class="background-masker header-left"></div>
+                                <div class="background-masker header-right"></div>
+                                <div class="background-masker header-bottom"></div>
+                                <div class="background-masker subheader-left"></div>
+                                <div class="background-masker subheader-right"></div>
+                                <div class="background-masker subheader-bottom"></div>
+                                <div class="background-masker content-top"></div>
+                                <div class="background-masker content-first-end"></div>
+                                <div class="background-masker content-second-line"></div>
+                                <div class="background-masker content-second-end"></div>
+                                <div class="background-masker content-third-line"></div>
+                                <div class="background-masker content-third-end"></div>
+                            </div>
+                            <div class="animated-background mb-3">
+                                <div class="background-masker header-top bars"></div>
+                                <div class="background-masker header-left"></div>
+                                <div class="background-masker header-right"></div>
+                                <div class="background-masker header-bottom bars"></div>
+                                <div class="background-masker subheader-left"></div>
+                                <div class="background-masker subheader-right"></div>
+                                <div class="background-masker subheader-bottom"></div>
+                                <div class="background-masker content-top"></div>
+                                <div class="background-masker content-first-end"></div>
+                                <div class="background-masker content-second-line"></div>
+                                <div class="background-masker content-second-end"></div>
+                                <div class="background-masker content-third-line"></div>
+                                <div class="background-masker content-third-end"></div>
+                            </div>
+                            <div class="animated-background">
+                                <div class="background-masker header-top bars"></div>
+                                <div class="background-masker header-left"></div>
+                                <div class="background-masker header-right"></div>
+                                <div class="background-masker header-bottom bars"></div>
+                                <div class="background-masker subheader-left"></div>
+                                <div class="background-masker subheader-right"></div>
+                                <div class="background-masker subheader-bottom"></div>
+                                <div class="background-masker content-top"></div>
+                                <div class="background-masker content-first-end"></div>
+                                <div class="background-masker content-second-line"></div>
+                                <div class="background-masker content-second-end"></div>
+                                <div class="background-masker content-third-line"></div>
+                                <div class="background-masker content-third-end"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    </div>
+</div>
+
+{% set modalContent %}
+<div class="pt-4 pb-4 px-2">
+    <h5 class="pb-4">Delete App Name?</h5>
+
+    <p>Are you sure you want to permanently delete App Name?</p>
+
+    <div class="mt-4 text-right" >
+        <button type="button" data-dismiss="modal" class="btn btn-outline-primary mr-3">Cancel</button>
+        <a href="all_apps.html" class="btn btn-primary">Delete</a>
+    </div>
+</div>
+{% endset %}
+
+{{ modal('delApp', modalContent)}}
+
+
+
+{% endblock %}

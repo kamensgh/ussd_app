@@ -1,0 +1,203 @@
+<!-- queue.nunjucks -->
+{% from "templates/partials/_modal.njk" import modal %}
+{% set title='List' %}
+{% extends "base.njk" %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<link href="{{ baseUrl }}/app/dist/styles/queue.css" rel="stylesheet">
+<link href="{{ baseUrl }}/app/dist/styles/inner.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="container">
+    <div class="title pr-3">
+        <div class="float-left pl-4">
+          <div id="fountainG">
+            <div id="fountainG_1" class="fountainG"></div>
+            <div id="fountainG_2" class="fountainG"></div>
+            <div id="fountainG_3" class="fountainG"></div>
+            <div id="fountainG_4" class="fountainG"></div>
+            <div id="fountainG_5" class="fountainG"></div>
+            <div id="fountainG_6" class="fountainG"></div>
+            <div id="fountainG_7" class="fountainG"></div>
+            <div id="fountainG_8" class="fountainG"></div>
+          </div>
+        </div>
+
+        <div class="float-right ">
+          <select class="custom-select" id="inputGroupSelect02">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+  
+          <select class="custom-select mx-5" id="inputGroupSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <a href="#" class="btn btn-primary"> Next Client</a>
+        </div>
+     
+
+       
+    </div>
+
+    <div>
+        <div class="row">
+            <div class="col-md-12 pr-3">
+                <div class="card">
+
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Ticket Number</th>
+                            <th scope="col">Telephone Number</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                                <th scope="row">1</th>
+                                <td>127849</td>
+                                <td>+233 267 737 847</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>127849</td>
+                                <td>+233 267 737 847</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>127849</td>
+                                <td>+233 267 737 847</td>
+                              </tr>
+                              <tr>
+                                    <th scope="row">1</th>
+                                    <td>127849</td>
+                                    <td>+233 267 737 847</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>127849</td>
+                                    <td>+233 267 737 847</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>127849</td>
+                                    <td>+233 267 737 847</td>
+                                  </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>127849</td>
+                            <td>+233 267 737 847</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                
+
+                </div>
+
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="stats mt-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <h5 class="text-muted font-weight-light">Total clients today</h5>
+                    <h1 class="font-weight-normal">450</h1>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                    <div class="card">
+                            <h5 class="text-muted font-weight-light">Clients in queue</h5>
+                            <h1 class="font-weight-normal">230</h1>
+
+                        </div>
+                
+            </div>
+            <div class="col-md-4">
+                    <div class="card">
+                            <h5 class="text-muted font-weight-light">Total clients today</h5>
+                            <h1 class="font-weight-normal">200</h1>
+
+                        </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+{% endblock %}

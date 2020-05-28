@@ -1,0 +1,123 @@
+.content{
+
+    .title{
+        height: 100px;
+        padding: 29px 0;
+
+        h3{
+            font-weight: bold;
+            font-size: x-large;
+        }
+    }
+
+    .card{
+        height: calc(100vh - 207px);
+        border: 1px solid #FAFAFB;
+        padding: 34px 23px;
+        box-shadow: none;
+        margin-bottom: 1rem;
+       
+
+        &.side{
+            background: #DEE0E8;
+
+
+            .activities{
+                overflow: auto;
+                .card{
+                    border-radius: 9px;
+                    height: auto;
+
+                    img{
+                        width: 65%;
+                    }
+                }
+            }
+        }
+
+        .dash{
+            display: block;
+            border-radius: 5px;
+            border: 1px dashed #9F65F0;
+            position: relative;
+            height: calc(100vh - 207px);
+
+            .drag-div{
+                height: 100%;
+                width: 100%;
+                background-position: 50%;
+                background-size: 120px;
+                background-repeat: no-repeat;
+                position: absolute;
+                // background: rgba(255, 255, 255, 0.87058823529);
+                background-image: url("../images/drop.png");
+            }
+        }
+
+        .add-div{
+            text-align: center;
+            margin-top: -31px;
+        }
+
+
+        &.bar-chart{
+            height: 450px;
+            margin-bottom: 1rem;
+
+            .recent-requests{
+                overflow: auto;
+            }
+        }
+
+
+        &.sim{
+            height: 917px;
+            background-image: url("../images/sim.png");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 320px;
+
+            .ussd-text{
+                background: #fff;
+                padding: 21px;
+                font-size: smaller;
+                width: 243px;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+
+                button{
+                    align-self: flex-end;
+                    width: 38px;
+                    // text-align: end;
+                    background: transparent;
+                }
+            }
+
+        }
+    }
+
+    .col-md-2{
+        -ms-flex: 0 0 17.6666666667%;
+        flex: 0 0 17.666667%;
+        max-width: 17.666667%;
+    }
+
+    .col-md-10 {
+        -ms-flex: 0 0 82.3333333333%;
+        flex: 0 0 82.333333%;
+        max-width: 82.333333%;
+    }
+
+    .all_apps{
+        .card{
+            height: auto;
+            padding-top: 1.5rem;
+        }
+
+        .top-right{
+            right: 22px;
+        }
+    }
+}
+

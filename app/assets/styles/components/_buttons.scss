@@ -1,0 +1,63 @@
+.btn-primary{
+    color: #fff;
+    font-weight: 100;
+    background: #640AE2;
+    background-image: -webkit-linear-gradient(top, #640AE2, rgb(184, 150, 211));
+    background-image: -moz-linear-gradient(top, #640AE2, #9F3DEB);
+    background-image: -ms-linear-gradient(top, #640AE2, #9F3DEB);
+    background-image: -o-linear-gradient(top, #640AE2, #9F3DEB);
+    background-image: linear-gradient(to bottom, #640AE2, #9F3DEB);
+    border: none;
+    border-radius: 2px;
+    padding: 11px 36px;
+    font-size: small;
+
+    &:hover{
+        background: #640AE2;
+        background-image: -webkit-linear-gradient(top, #640AE2, #9F3DEB);
+        background-image: -moz-linear-gradient(top, #640AE2, #9F3DEB);
+        background-image: -ms-linear-gradient(top, #640AE2, #9F3DEB);
+        background-image: -o-linear-gradient(top, #640AE2, #9F3DEB);
+        background-image: linear-gradient(to bottom, #640AE2, #9F3DEB);
+        color: #fff;
+        border: none;
+    }
+
+    &:active{
+        background: #640AE2;
+        background-image: -webkit-linear-gradient(top, #640AE2, #9F3DEB);
+        background-image: -moz-linear-gradient(top, #640AE2, #9F3DEB);
+        background-image: -ms-linear-gradient(top, #640AE2, #9F3DEB);
+        background-image: -o-linear-gradient(top, #640AE2, #9F3DEB);
+        background-image: linear-gradient(to bottom, #640AE2, #9F3DEB);
+        color: #fff;
+        border: none;
+    }
+
+
+    &:focus{
+        box-shadow: 0 0 0 0.1rem rgba(100, 0, 230, 0.8117647058823529);
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    background: #640AE2;
+    background-image: -webkit-linear-gradient(top, #640AE2, #9F3DEB);
+    background-image: -moz-linear-gradient(top, #640AE2, #9F3DEB);
+    background-image: -ms-linear-gradient(top, #640AE2, #9F3DEB);
+    background-image: -o-linear-gradient(top, #640AE2, #9F3DEB);
+    background-image: linear-gradient(to bottom, #640AE2, #9F3DEB);
+    color: #fff;
+    border: none;
+}
+
+.btn-outline-primary{
+    border-radius: 2px;
+    padding: 11px 36px;
+    font-size: small;
+
+    &:hover{
+        background: transparent;
+        color: #9F3DEB;
+    }
+}

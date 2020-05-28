@@ -1,0 +1,67 @@
+<!-- inner.nunjucks -->
+{% from "templates/partials/_modal.njk" import modal %}
+{% set title='Create App' %}
+{% extends "site_base.njk" %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<link href="{{ baseUrl }}/app/dist/styles/inner.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="title pr-3">
+    <h3 class="float-left">Apps</h3>
+    <a href="all_apps.html" class="btn float-right btn-primary">Add New App</a>
+</div>
+
+<div>
+    <div class="row no-gutters">
+        <div class="col-md-12 pr-3">
+            <div class="card">
+
+                <div class="col-12 col-sm-10 col-md-3 m-auto float-none">
+                    <div class="add-div">
+                            <img src="{{ baseUrl }}/app/dist/images/app.png" class="mb-4" width="50" />
+                            <p class="mb-5">Create a USSD app on out platform to engage your users.</p>
+                            <a href="all_apps.html" data-toggle="modal" data-target="#addApp" class="btn btn-outline-primary">Add New App</a>
+                    </div>
+                </div>
+               
+               
+
+            </div>
+
+        </div>
+      
+    </div>
+</div>
+
+{% set modalContent %}
+<div class="pt-4 pb-4 px-2">
+    <h5 class="pb-4">New App</h5>
+
+    <div class="form-group mb-4">
+        <label>Application Name</label>
+        <input class="form-control" placeholder="App Name" />
+    </div>
+    <div class="form-group mb-4">
+        <label>Application Description</label>
+        <div class="form-control h-100 p-3 text-dark">
+                Which of the following sequences shows progressive elaboration of the objective of a novel endeavour that is finite in duration?
+        </div>
+    </div>
+    <div class="mt-4 text-right" >
+        <button type="button" data-dismiss="modal" class="btn btn-outline-primary mr-3">Cancel</button>
+        <a href="all_apps.html" class="btn btn-primary">Save</a>
+    </div>
+</div>
+{% endset %}
+
+{{ modal('addApp', modalContent)}}
+
+
+
+{% endblock %}

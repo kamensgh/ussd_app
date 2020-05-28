@@ -1,0 +1,51 @@
+<!-- login.nunjucks -->
+{% set title='Login' %}
+{% extends "base.njk" %}
+
+{% block stylesheet %}
+<link href="{{ baseUrl }}/app/dist/styles/login.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="login">
+ <div class="login centered">
+    <div class="container">
+      <div class="col-12 col-sm-10 col-md-7 m-auto float-none">
+        <div class="login-form w-100 bg-white">
+            <div class="row no-gutters">
+                <div class="d-none d-md-block col-md-4">
+                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid" />
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="bg-white h-100 p-4">
+                         <form>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputEmail1" class="font-weight-bold">E-mail</label>
+                                <input type="email" class="form-control" placeholder="victor@gmail.com">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="font-weight-bold">Password</label>
+                                <input type="password" class="form-control" placeholder="**************">
+                            </div>
+                           
+                            <a href="create_app.html" class="btn float-right btn-primary">Log In</a>
+                        </form>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+         
+        </div>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  {% endblock %}
